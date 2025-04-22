@@ -12,6 +12,8 @@ import { fileURLToPath } from 'url';
 // Importa los métodos del controlador de autenticación (login y registro)
 import { methods as authentication } from "./controllers/authentication.controller.js";
 
+import { methods as clientesController } from "./controllers/clientes.control.js";
+
 
 
 // ============ CONFIGURACIÓN DEL DIRECTORIO ACTUAL ============
@@ -82,3 +84,6 @@ app.post("/api/register", authentication.register);
 app.post("/api/login", authentication.login);
 
 // =========================================
+
+app.post("/api/clientes", clientesController.addCliente);
+

@@ -25,14 +25,14 @@
 
             <!-- Formulario de inicio de sesión -->
             <form id="regcli-form">
-                <label for="user"><b>Nombre</b></label>
-                <input type="text" placeholder="Ingresar nombre(s)" name="user" id="user" required>
+                <label for="nombre"><b>Nombre</b></label>
+                <input type="text" placeholder="Ingresar nombre(s)" name="nombre" id="nombre" required>
 
                 <label for="lastn"><b>Apellidos</b></label>
-                <input type="text" placeholder="Ingresar Apellidos" name="lastn" id="lastn" required>
+                <input type="text" placeholder="Ingresar Apellidos" name="apellido" id="apellido" required>
 
-                <label for="nombre"><b>Nombre completo del contrato</b></label>
-                <input type="text" placeholder="Ingresar nombre completo" name="nombre" id="nombre" required>
+                <label for="nombrec"><b>Nombre completo del contrato</b></label>
+                <input type="text" placeholder="Ingresar nombre completo" name="nombrec" id="nombrec" required>
 
                 <label for="Identificador"><b>Identificador</b></label>
                 <input type="text" placeholder="Ingresar Identificador" name="Identificador" id="Identificador">
@@ -45,9 +45,9 @@
 
                 <label for="semana"><b>Semana de Corte</b></label>
                 <select name="semana" id="semana">
-                    <option value="uno">1</option>
-                    <option value="dos">2</option>
-                    <option value="tres">3</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
                 </select>
 
                 <label for="ffc"><b>Frecuencia de Facturacion</b></label>
@@ -79,6 +79,49 @@
         </div>
     </main>
 
-
+    <script>
+      document.getElementById('regcli-form').addEventListener('submit', async function(e) {
+        e.preventDefault(); // Evita que se recargue la página
+    
+        const data = {
+  nombre: document.getElementById('nombre').value,
+  apellido: document.getElementById('apellido').value,
+  nombreRecibo: document.getElementById('nombrec').value, // puedes usar el mismo si aplica
+  identificador: document.getElementById('Identificador').value,
+  rpu: document.getElementById('rpu').value,
+  produccionEstimada: document.getElementById('produccionest').value,
+  semanaRecoleccion: document.getElementById('semana').value,
+  frecuenciaFacturacion: document.getElementById('ffc').value,
+  fechaInstalacion: document.getElementById('fechac').value,
+  telefono: document.getElementById('tel').value,
+  correo: document.getElementById('email').value,
+  direccion: document.getElementById('direccion').value,
+  detalles: document.getElementById('detalles').value
+};
+    
+        try {
+          const response = await fetch('/api/clientes', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          });
+    
+          const result = await response.json();
+    
+          if (response.ok) {
+            alert("Cliente añadido con éxito");
+            document.getElementById('regcli-form').reset();
+          } else {
+            alert("Error al añadir cliente: " + result.message);
+          }
+        } catch (error) {
+          console.error("Error en la solicitud:", error);
+          alert("Error al conectar con el servidor");
+        }
+      });
+    </script>
   </body>
 </html>
+
