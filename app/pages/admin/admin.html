@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Define el idioma de la página como inglés -->
+  <head>
+    <title>main</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+
+    <!-- Define el conjunto de caracteres como UTF-8, para soportar caracteres especiales -->
+    <meta charset="UTF-8">
+
+    <!-- Configura la visualización en dispositivos móviles para que sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="stylemin.css">
+
+    <!-- Enlace al archivo JavaScript (usando 'defer' para que cargue después del HTML) -->
+    <script src="admin.js" defer></script> 
+    <link rel="icon" type="image/png" href="IMG/SUNERGY.png"> 
+  </head>
+
+  <body>
+    <header>
+      <!-- Contenedor principal del encabezado -->
+      <div class="header-container">
+          <!-- Logo de la empresa -->
+          <img src="IMG/SUNERGY.png" alt="Logo" class="logo">
+          
+          <!-- Título principal del sitio -->
+          <div class="header-text">
+              <h1>GESTIÓN DE CONSUMO Y PRODUCCIÓN DE ENERGÍA</h1>
+          </div>
+
+          <!-- Botón del menú hamburguesa para dispositivos móviles -->
+          <div class="menu-toggle" id="menu-toggle">
+              <!-- Tres líneas que representan el ícono del menú -->
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </div>
+
+      <!-- Menú de navegación -->
+      <nav id="menu" class="nav">
+          <ul>
+              <!-- Enlace al inicio del panel de administración -->
+              <li><a href="/admin"><b>Inicio</b></a></li>
+
+              <!-- Elemento con submenú para "Clientes" -->
+              <li class="dropdown">
+                  <a href="/clientes" class="dropbtn"><b>Clientes</b></a>
+                  <!-- Submenú desplegable -->
+                  <div class="dropdown-content">
+                    <a href="/newcliente"><b>Agregar cliente</b></a> <!-- Enlace para agregar cliente -->
+                  </div>
+              </li>
+
+              <!-- Botón de salida / cierre de sesión -->
+              <li><button><b>Salir</b></button></li>
+          </ul>
+      </nav>
+    </header>
+
+    <!-- Contenedor principal del contenido dividido en columnas -->
+    <div class="content-container">
+        <!-- Columna izquierda (ej. alarmas) -->
+        <div class="left-column">
+          <p><b>Alarmas activas</b></p>
+        </div>
+
+        <!-- Columna derecha (ej. reportes) -->
+        <div class="right-column">
+          <p><b>Reportes pendientes</b></p>
+        </div>
+    </div>
+
+    <main>
+      <!-- Contenedor principal del contenido dinámico del panel -->
+      <div class="contp">
+
+        <!-- Sección de alarmas -->
+        <div class="alarmas">
+          <h1>"HOLA"</h1> <!-- Título temporal (puedes cambiarlo luego) -->
+          <!-- Ícono de campana (requiere librería como Font Awesome) -->
+          <i class="fa-light fa-bell fa-beat" style="color: #63E6BE;"></i>
+          <!-- Mensaje indicando que no hay alarmas -->
+          <p class="msja">No se encontraron alarmas activas</p>
+        </div>
+
+        <!-- Sección de reportes -->
+        <div class="reportes">
+          <h1>"TONOTOS"</h1> <!-- Título temporal -->
+          <!-- Mensaje indicando que no hay reportes -->
+          <p class="msjr">No se encontraron reportes pendientes</p>
+        </div>
+
+      </div>
+    </main>
+  </body>
+
+  <footer>
+    <!-- Contenedor principal del pie de página -->
+    <div class="footer-container">
+
+        <!-- Enlaces legales o informativos -->
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="footer-contact">
+            <p>Contacto: megasolar77@hotmail.com</p>
+            <p>+52 (618) 811 01 27</p>
+            <p>+52 (618) 185 79 69</p>
+        </div>
+
+        <!-- Enlaces a redes sociales -->
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/megasolarenergiass/" target="_blank"><b>Facebook</b></a>
+            <a href="https://www.instagram.com/megasolardgo/?hl=es-la" target="_blank"><b>Instagram</b></a>
+        </div>
+    </div>
+  </footer>
+</html>

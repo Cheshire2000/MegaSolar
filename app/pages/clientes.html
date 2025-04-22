@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Define el idioma de la página como inglés -->
+  <head>
+    <title>main</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    
+    <!-- Define el conjunto de caracteres como UTF-8, lo que asegura la compatibilidad con caracteres especiales como acentos o caracteres no latinos -->
+    <meta charset="UTF-8">
+    
+    <!-- Define la configuración para que la página sea responsiva en dispositivos móviles, ajustando el tamaño de la página según el ancho del dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Enlace a la hoja de estilos externa (CSS) para dar estilo a la página -->
+    <link rel="stylesheet" href="stylemin.css">
+    
+    <!-- Enlace al archivo JavaScript externo que se ejecutará después de cargar el contenido HTML, gracias a 'defer' -->
+    <script src="admin.js" defer></script> 
+    <link rel="icon" type="image/png" href="IMG/SUNERGY.png"> 
+  </head>
+  
+  <body>
+    <header>
+      <!-- Contenedor que agrupa la imagen del logo, el texto principal y el menú de navegación -->
+      <div class="header-container">
+          <!-- Imagen del logo -->
+          <img src="IMG/SUNERGY.png" alt="Logo" class="logo">
+          
+          <!-- Texto centrado en el encabezado -->
+          <div class="header-text">
+              <h1>Gestión de Consumo y Producción de Energía</h1> <!-- Título de la página -->
+          </div>
+  
+          <!-- Menú desplegable para móviles -->
+          <div class="menu-toggle" id="menu-toggle">
+              <!-- Las barras del menú -->
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </div>
+  
+      <!-- Menú de navegación -->
+      <nav id="menu" class="nav">
+          <ul>
+              <li><a href="/admin"><b>Inicio</b></a></li> <!-- Enlace de inicio -->
+  
+              <!-- Dropdown para "Clientes" -->
+              <li class="dropdown">
+                  <a href="#" class="dropbtn"><b>Clientes</b></a>
+                  <div class="dropdown-content">
+                      <a href="/newcliente"><b>Agregar cliente</b></a> <!-- Enlace para agregar cliente -->
+                  </div>
+              </li>
+  
+              <li><a href="/"><b>Salir</b></a></li> <!-- Enlace para salir de la página -->
+          </ul>
+      </nav>
+    </header>
+    <main>
+       <p> holiwus</p>
+    </main>
+    
+  </body>
+
+  <footer>
+    <!-- Contenedor del pie de página -->
+    <div class="footer-container">
+        <!-- Sección de enlaces del pie de página -->
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Política de Privacidad</a></li> <!-- Enlace a la política de privacidad -->
+                <li><a href="#">Términos y Condiciones</a></li> <!-- Enlace a los términos y condiciones -->
+                <li><a href="#">Preguntas Frecuentes</a></li> <!-- Enlace a las preguntas frecuentes -->
+            </ul>
+        </div>
+        
+        <!-- Sección de contacto -->
+        <div class="footer-contact">
+            <p>Contacto: megasolar77@hotmail.com</p> <!-- Dirección de correo electrónico -->
+            <p>+52 (618) 811 01 27</p> <!-- Número de contacto 1 -->
+            <p>+52 (618) 185 79 69</p> <!-- Número de contacto 2 -->
+        </div>
+        
+        <!-- Sección de redes sociales -->
+        <div class="footer-socials">
+            <!-- Enlaces a redes sociales -->
+            <a href="https://www.facebook.com/megasolarenergiass/" target="_blank"><b>Facebook</b></a>
+            <a href="https://www.instagram.com/megasolardgo/?hl=es-la" target="_blank"><b>Instagram</b></a>
+        </div>
+    </div>
+  </footer>
+</html>

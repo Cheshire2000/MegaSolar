@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    background-color: #fde5ba ;
+}
+
+.form-container{
+    width: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form+p, form p{
+    text-align: center
+    
+    ;
+}
+
+input, button, select{
+    border-radius: 4px;
+    padding: 15px 30px;
+    font-size: larger;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.btng{
+  background-color: #2fd653;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+.btnc{
+  background-color: #ec2828;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+button {
+    background-color: #fcba4c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+  }
+
+  img.avatar {
+    width: 50%;
+  }
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  .error{
+    color: rgb(228, 61, 61);
+  }
+  .escondido{
+    display: none;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+  .input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-icon img {
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    opacity: 0.8;
+  }
+  
+  .input-icon input {
+    padding-left: 40px; /* espacio para el icono */
+    flex: 1;
+  }
+
+  .titulo-form {
+    color: rgb(245, 159, 0);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }

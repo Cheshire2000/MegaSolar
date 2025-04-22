@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en"> <!-- Define el idioma de la página como inglés -->
+  <head>
+    <title>Registro de Usuario</title> <!-- Título de la pestaña del navegador -->
+
+    <!-- Define el conjunto de caracteres como UTF-8 (para soportar tildes, eñes, etc.) -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que el diseño sea responsivo, adaptándose a pantallas pequeñas (como móviles) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlace a la hoja de estilos externa que define la apariencia de la página -->
+    <link rel="stylesheet" href="style.css"> 
+
+    <!-- Enlace al archivo JavaScript que se ejecutará cuando el DOM esté completamente cargado -->
+    <script src="register.js" defer></script> 
+    <link rel="icon" type="image/png" href="IMG/SUNERGY.png"> 
+  </head>
+
+  <body>
+    <!-- Elemento principal que contiene el contenido visual de la página -->
+    <main>
+
+        <!-- Contenedor del formulario de registro -->
+        <div class="form-container">
+            <!-- Título que aparece sobre el formulario -->
+            <h1>Crear Cuenta</h1>
+            <div class="imgcontainer">
+              <img src="IMG/SUNERGY.png" alt="Avatar" class="avatar">
+            </div>
+
+            <!-- Formulario de registro de usuario -->
+            <form id="register-form">
+                <!-- Campo de entrada para el nombre de usuario -->
+                <label for="user"><b>Nombre</b></label>
+                <input type="text" placeholder="Ingresar usuario" name="user" id="user" required>
+
+                <!-- Campo de entrada para la contraseña -->
+                <label for="password"><b>Contraseña</b></label>
+                <input type="password" placeholder="Ingresar contraseña" name="password" id="password" required>
+
+                <!-- Campo para repetir la contraseña y asegurarse que coincidan -->
+                <label for="psrepeat"><b>Reescribir contraseña</b></label>
+                <input type="password" placeholder="Reescribir Contraseña" name="psrepeat" id="psrepeat" required>
+
+                <!-- Botón para enviar el formulario -->
+                <button type="submit">Guardar</button>
+
+                <!-- Mensaje de error que se puede mostrar si ocurre un fallo en el registro -->
+                <!-- Tiene clases para ocultarlo por defecto (escondido) y mostrarlo dinámicamente desde JS -->
+                <p class="error escondido">Error al iniciar sesión</p>
+            </form>
+
+            <!-- Enlace para ir a la página de inicio de sesión si ya se tiene cuenta -->
+            <p>¿Ya tienes una cuenta? <a href="/">Iniciar Sesión</a>.</p>
+        </div>
+
+    </main>
+  </body>
+</html>

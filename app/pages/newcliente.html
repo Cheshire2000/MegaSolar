@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Enlace a la hoja de estilos externa que define la apariencia de la página -->
+    <link rel="stylesheet" href="style.css"> 
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="IMG/SUNERGY.png"> 
+
+  </head>
+  <body>
+    <main>
+        <!-- Contenedor principal para el formulario de inicio de sesión -->
+        <div class="form-container">
+            <!-- Título del formulario -->
+            <h1 class="titulo-form">AÑADIR CLIENTE
+
+
+            </h1>
+            <P>Asegúrate de tener todos los datos de tu nuevo cliente antes de darlo de alta.  
+              Verifica cuidadosamente la información ingresada.</P>
+
+            <div class="imgcontainer">
+              <img src="IMG/clientes.png" alt="Avatar" class="avatar">
+            </div>
+
+            <!-- Formulario de inicio de sesión -->
+            <form id="regcli-form">
+                <label for="user"><b>Nombre</b></label>
+                <input type="text" placeholder="Ingresar nombre(s)" name="user" id="user" required>
+
+                <label for="lastn"><b>Apellidos</b></label>
+                <input type="text" placeholder="Ingresar Apellidos" name="lastn" id="lastn" required>
+
+                <label for="nombre"><b>Nombre completo del contrato</b></label>
+                <input type="text" placeholder="Ingresar nombre completo" name="nombre" id="nombre" required>
+
+                <label for="Identificador"><b>Identificador</b></label>
+                <input type="text" placeholder="Ingresar Identificador" name="Identificador" id="Identificador">
+
+                <label for="rpu"><b>RPU</b></label>
+                <input type="text" placeholder="Ingresar RPU" name="rpu" id="rpu" required>
+
+                <label for="produccionest"><b>Producion Estimada</b></label>
+                <input type="text" placeholder="Ingresar Producion esperada" name="produccionest" id="produccionest" required>
+
+                <label for="semana"><b>Semana de Corte</b></label>
+                <select name="semana" id="semana">
+                    <option value="uno">1</option>
+                    <option value="dos">2</option>
+                    <option value="tres">3</option>
+                </select>
+
+                <label for="ffc"><b>Frecuencia de Facturacion</b></label>
+                <select name="ffc" id="ffc">
+                    <option value="men">Mensual</option>
+                    <option value="bi">Bimestral</option>
+                </select>
+
+                <label for="fecha"><b>Fecha de contratacion</b></label>
+                <input type="date" id="fechac" name="fechac" required>
+
+                <label for="tel"><b>Telefono</b></label>
+                <input type="text" placeholder="Ingresar telefono" name="tel" id="tel">
+
+                <label for="email"><b>Correo electronico </b></label>
+                <input type="email" placeholder="Ingresar contacto del cliente" id="email" name="email">
+                
+                <label for="direccion"><b>Direccion </b></label>
+                <input type="text" placeholder="Ingresar direccion del cliente" id="direccion" name="direccion">
+
+                <label for="detalles"><b>Detalles </b></label>
+                <input type="text" placeholder="Ingresar detalles del cliente" id="detalles" name="detalles">
+                
+                <!-- Botón de envío para iniciar sesión -->
+                <button class="btng" type="submit">Guardar</button>
+                <button class="btnc" type="button" onclick="window.location.href = 'admin'">Cancelar</button>
+                <p class="error escondido">Error al iniciar sesión</p>
+            </form>
+        </div>
+    </main>
+
+
+  </body>
+</html>

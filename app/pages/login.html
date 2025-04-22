@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en"> <!-- Define el idioma de la página como inglés -->
+  <head>
+    <title>SUNERGY LOGIN</title>
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres como UTF-8 (compatibilidad con caracteres especiales) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsiva en dispositivos móviles -->
+    
+    <!-- Enlace a la hoja de estilos externa (CSS) para dar estilo a la página -->
+    <link rel="stylesheet" href="style.css"> 
+    
+    <!-- Enlace al archivo JavaScript externo, defer hace que el script se ejecute después de que el contenido HTML se haya cargado -->
+    <script src="login.js" defer></script> 
+    <link rel="icon" type="image/png" href="IMG/SUNERGY.png"> 
+  </head>
+  <body>
+    <!-- Elemento principal que contiene todo el contenido visible de la página -->
+    <main>
+        <!-- Contenedor principal para el formulario de inicio de sesión -->
+        <div class="form-container">
+            <!-- Título del formulario -->
+            <h1>Iniciar sesión</h1>
+
+            <!-- Formulario de inicio de sesión -->
+            <form id="login-form">
+            <div class="imgcontainer">
+              <img src="IMG/SUNERGY.png" alt="Avatar" class="avatar">
+            </div>
+
+            <label for="user"><b>Nombre</b></label>
+            <div class="input-icon">
+              <img src="IMG/user.png" alt="Icono usuario">
+              <input type="text" placeholder="Ingresar usuario" name="user" id="user" required>
+            </div>
+            <label for="password"><b>Contraseña</b></label>
+            <div class="input-icon">
+              <img src="IMG/password.png" alt="Icono contraseña">
+              <input type="password" placeholder="Ingresar contraseña" name="password" id="password" required>
+            </div>
+
+                <!-- Botón de envío para iniciar sesión -->
+                <button type="submit">Login</button>
+                <p class="error escondido">Error al iniciar sesión</p>
+            </form>
+            
+            <!-- Enlace a la página de registro para los usuarios que no tienen cuenta -->
+            <p> ¿No tienes una cuenta? <a href="/register">Regístrate</a>.</p>
+        </div>
+    </main>
+  </body>
+</html>
